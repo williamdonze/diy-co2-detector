@@ -1,6 +1,6 @@
 # DIY CO₂ Detector
 
-![banner-ntfy](https://github.com/williamdonze/test-markdown/assets/146176936/9da32150-22c5-499a-b6ac-fa7e1dcb84b3)
+![banner-ntfy Large](https://github.com/williamdonze/diy-co2-detector/assets/146176936/e824c081-47e8-4071-bc09-461c2d343fe7)
 ---
 This project is part of the blog article [DIY CO₂ Detector](https://medium.com/@williamdonze/diy-co₂-detector-6af3d00fff61)
 
