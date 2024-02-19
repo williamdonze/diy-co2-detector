@@ -21,6 +21,7 @@ def scrape_co2_level(url):
 def send_curl_notification(co2_level):
     try:
         if co2_level > 1500:
+            # Replace the username, password and the ntfy url with your own infos
             curl_command = f'curl -u "<username>:<password>" -H "t: High CO₂ value 📈" -d "{co2_level} ppm" https://ntfy.example.com/topic > /dev/null 2>&1'
             subprocess.run(curl_command, shell=True, check=True)
             print("Curl command executed successfully.")
@@ -28,6 +29,7 @@ def send_curl_notification(co2_level):
         print("An error occurred while sending curl request:", str(e))
 
 if __name__ == "__main__":
+    # Replace the prometheus client url with your own (where the CO2 metrics are exposed)
     prometheus_client_url = "http://<your-prometheus-client-url>:8000"
     co2_level = scrape_co2_level(prometheus_client_url)
     if co2_level:
